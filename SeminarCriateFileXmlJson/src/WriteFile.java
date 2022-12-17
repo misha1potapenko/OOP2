@@ -1,3 +1,3 @@
 public abstract class WriteFile {
-    public abstract String writeFile();
+    public abstract void writeFile();
 }

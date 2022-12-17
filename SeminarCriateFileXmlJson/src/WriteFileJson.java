@@ -1,6 +1,10 @@
+import org.json.JSONObject;
+
 public class WriteFileJson extends WriteFile{
     @Override
-    public String writeFile() {
-        return null;
+    public void writeFile() {
+        JSONObject myClass = new JSONObject();
+
+
     }
 }
