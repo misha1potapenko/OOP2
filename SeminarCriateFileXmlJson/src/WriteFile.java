@@ -1,3 +1,3 @@
 public abstract class WriteFile {
-    public abstract void writeFile();
+    public abstract   void  writeFileForClass() throws Exception;
 }
