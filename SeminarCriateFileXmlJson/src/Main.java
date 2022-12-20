@@ -39,6 +39,7 @@ public class Main {
         WriteFileTxt forClassTxt = new WriteFileTxt();
         forClassTxt.writeFileForClass();
 
-
+        WriteFileXml forClassXml = new WriteFileXml();
+        forClassXml.writeFileForClass();
     }
 }
