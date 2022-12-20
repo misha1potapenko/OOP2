@@ -15,7 +15,7 @@ public class WriteFileJson extends WriteFile {
         myClass.put("Лида Козлова", 4.9);
         //Write JSON file
         try (FileWriter file = new FileWriter("markClass.json")) {
-            //We can write any JSONArray or JSONObject instance to the file
+
             file.write(myClass.toString());
             file.flush();
 

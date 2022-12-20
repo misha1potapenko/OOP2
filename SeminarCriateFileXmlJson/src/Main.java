@@ -33,8 +33,12 @@ XML:
 
 public class Main {
     public static   void main(String[] args)  {
-        WriteFileJson forClass = new WriteFileJson();
-        forClass.writeFileForClass();
-        System.out.println("Hello world!");
+        WriteFileJson forClassJson = new WriteFileJson();
+        forClassJson.writeFileForClass();
+
+        WriteFileTxt forClassTxt = new WriteFileTxt();
+        forClassTxt.writeFileForClass();
+
+
     }
 }
