@@ -1,13 +1,21 @@
 import java.util.Iterator;
 
-public class GroupListIterator implements Iterator {
+public class GroupListIterator implements Iterator<Students> {
+    private  int index = 0;
+
+    public GroupListIterator(Group groupList) {
+        this.groupList = groupList;
+    }
+
+    private Group groupList;
+
     @Override
     public boolean hasNext() {
-        return false;
+        return index < groupList.getStudentsGroup().size();
     }
 
     @Override
-    public Object next() {
-        return null;
+    public Students next() {
+        return groupList.getStudentsGroup().get(index++);
     }
 }
