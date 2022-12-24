@@ -23,5 +23,8 @@ public class Group implements Iterable<Students> {
     public Iterator<Students> iterator() {
         return new GroupListIterator(this);
     }
+    public Iterator<Students> descending (){
+        return new ReverseIterator(this);
+    }
 }
 

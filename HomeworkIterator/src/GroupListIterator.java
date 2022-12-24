@@ -11,7 +11,7 @@ public class GroupListIterator implements Iterator<Students> {
 
     @Override
     public boolean hasNext() {
-        return index < groupList.getSize()-1;
+        return index < groupList.getSize();
     }
 
     @Override

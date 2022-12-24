@@ -16,6 +16,7 @@
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Main {
@@ -33,8 +34,14 @@ public class Main {
         for (Students student: listGroup
              ) {
             System.out.println(student);
+        }
+        System.out.println();
+        Iterator<Students> it = listGroup.descending();
+        while (it.hasNext()){
+            System.out.println(it.next());
 
         }
+
 
     }
 }
