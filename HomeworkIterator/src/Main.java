@@ -30,7 +30,11 @@ public class Main {
         listStudents.add(new Students("Zajcev Kiril", LocalDate.of(1998,12,11),  4.5));
         listStudents.add(new Students("Jmakov Black", LocalDate.of(1978,12,19),  4.9));
         Group listGroup = new Group(listStudents);
-        GroupListIterator.get();
+        for (Students student: listGroup
+             ) {
+            System.out.println(student);
+
+        }
 
     }
 }

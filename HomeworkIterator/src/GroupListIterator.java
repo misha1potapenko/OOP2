@@ -1,7 +1,7 @@
 import java.util.Iterator;
 
 public class GroupListIterator implements Iterator<Students> {
-    private  int index = -1;
+    private  int index = 0;
 
     private Group groupList;
 
@@ -11,11 +11,12 @@ public class GroupListIterator implements Iterator<Students> {
 
     @Override
     public boolean hasNext() {
-        return index < groupList.getSize();
+        return index < groupList.getSize()-1;
     }
 
     @Override
     public Students next() {
+        System.out.println("Текущий индекс = " + index);
         return groupList.get(index++);
     }
 }
