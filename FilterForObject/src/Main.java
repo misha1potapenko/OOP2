@@ -16,7 +16,11 @@
 public class Main {
     public static void main(String[] args) {
         IsEven isEven = new IsEven();
-
         System.out.println(isEven.IsGood(4));
+
+        IsPositive isPositive = new IsPositive();
+
+        System.out.println(isPositive.IsGood(25.0));
+
     }
 }
