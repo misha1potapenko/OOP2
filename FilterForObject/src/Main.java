@@ -15,6 +15,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        IsEven isEven = new IsEven();
+
+        System.out.println(isEven.IsGood(4));
     }
 }
