@@ -24,6 +24,9 @@ public class Main {
         BeginsWithA withA = new BeginsWithA();
         System.out.println(withA.IsGood("adasda"));
 
+        BeginsWith with = new BeginsWith();
+        System.out.println(with.IsGood("adasda"));
+
 
 
     }
