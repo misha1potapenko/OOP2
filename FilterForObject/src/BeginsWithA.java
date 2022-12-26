@@ -1,6 +1,6 @@
-public class BeginsWithA implements IsGood{
+public class BeginsWithA implements IsGood<String>{
     @Override
-    public boolean IsGood(Object item) {
-        return false;
+    public boolean IsGood(String item) {
+        return item.startsWith("a");
     }
 }

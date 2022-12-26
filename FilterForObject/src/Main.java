@@ -19,8 +19,12 @@ public class Main {
         System.out.println(isEven.IsGood(4));
 
         IsPositive isPositive = new IsPositive();
-
         System.out.println(isPositive.IsGood(25.0));
+
+        BeginsWithA withA = new BeginsWithA();
+        System.out.println(withA.IsGood("adasda"));
+
+
 
     }
 }
