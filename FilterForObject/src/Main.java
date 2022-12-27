@@ -13,6 +13,9 @@
 //        Продемонстрируйте, что это работает.
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         IsEven isEven = new IsEven();
@@ -27,6 +30,10 @@ public class Main {
         BeginsWith with = new BeginsWith();
         System.out.println(with.IsGood("adasda"));
 
+
+
+    }
+    public static void filter(IsGood<T> forFilter){
 
 
     }
