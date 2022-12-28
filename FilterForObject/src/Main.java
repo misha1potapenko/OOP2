@@ -30,11 +30,22 @@ public class Main {
         BeginsWith with = new BeginsWith();
         System.out.println(with.IsGood("adasda"));
 
+        ArrayList<Integer> new1 = new ArrayList<>();
+        new1.add(5);
+        new1.add(6);
+        new1.add(7);
+        filter(new1);
+
+    }
+    public static void filter(ArrayList<Integer> forFilter){
+        for (Integer filter: forFilter
+             ) {
+
+        }
+
+            System.out.println(forFilter);
+
+        }
 
 
     }
-    public static void filter(IsGood<T> forFilter){
-
-
-    }
-}
