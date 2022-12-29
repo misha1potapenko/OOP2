@@ -1,7 +1,7 @@
-public class IsPositive implements IsGood<Double>{
+public class IsPositive implements IsGood<Object>{
 
     @Override
-    public boolean IsGood(Double item) {
-        return item>0;
+    public boolean IsGood(Object item) {
+        return (Double)item>0;
     }
 }

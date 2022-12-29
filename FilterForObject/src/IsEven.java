@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class IsEven implements IsGood<Integer>{
+public class IsEven implements IsGood<Object>{
     @Override
-    public boolean IsGood(Integer item) {
+    public boolean IsGood(Object item) {
 
-        return  item%2==0;
+        return  (Integer)item%2==0;
     }
 }

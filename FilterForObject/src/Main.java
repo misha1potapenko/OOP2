@@ -18,34 +18,55 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        IsEven isEven = new IsEven();
-        System.out.println(isEven.IsGood(4));
+//        IsEven isEven = new IsEven();
+//        System.out.println(isEven.IsGood(4));
+//
+//        IsPositive isPositive = new IsPositive();
+//        System.out.println(isPositive.IsGood(25.0));
+//
+//        BeginsWithA withA = new BeginsWithA();
+//        System.out.println(withA.IsGood("adasda"));
+//
+//        BeginsWith with = new BeginsWith();
+//        System.out.println(with.IsGood("adasda"));
 
-        IsPositive isPositive = new IsPositive();
-        System.out.println(isPositive.IsGood(25.0));
-
-        BeginsWithA withA = new BeginsWithA();
-        System.out.println(withA.IsGood("adasda"));
-
-        BeginsWith with = new BeginsWith();
-        System.out.println(with.IsGood("adasda"));
-
-        ArrayList<Integer> new1 = new ArrayList<>();
-        new1.add(5);
-        new1.add(6);
-        new1.add(7);
-        filter(new1);
-
-    }
-    public static void filter(ArrayList<Integer> forFilter){
-        for (Integer filter: forFilter
-             ) {
-
-        }
-
-            System.out.println(forFilter);
-
-        }
-
+//        ArrayList<Object> new1 = new ArrayList<>();
+//        new1.add(5);
+//        new1.add(6);
+//        new1.add(7);
+//        new1.add(4);
+//        new1.add(12);
+//        System.out.println(filter(new1));
+        ArrayList<Object> new2 = new ArrayList<>();
+        new2.add(-5.0);
+        new2.add(-2.4);
+        new2.add(7.0);
+        new2.add(4.3);
+        new2.add(-12.0);
+        System.out.println(filter(new2));
 
     }
+
+    public static List<Object> filter(ArrayList<Object> forFilter) {
+        List newList = new ArrayList<>();
+
+        for (Object filter : forFilter
+        ) { if (filter instanceof Integer) {
+            IsEven even = new IsEven();
+            if (even.IsGood(filter)) {
+                newList.add(filter);
+            }
+        }
+            if (filter instanceof Double) {
+                IsPositive isPositive = new IsPositive();
+                if (isPositive.IsGood(filter)) {
+                    newList.add(filter);
+                }
+            }
+
+
+        }return newList;
+
+
+    }
+}
