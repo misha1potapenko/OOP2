@@ -30,25 +30,35 @@ public class Main {
 //        BeginsWith with = new BeginsWith();
 //        System.out.println(with.IsGood("adasda"));
 
-//        ArrayList<Object> new1 = new ArrayList<>();
-//        new1.add(5);
-//        new1.add(6);
-//        new1.add(7);
-//        new1.add(4);
-//        new1.add(12);
-//        System.out.println(filter(new1));
-        ArrayList<Object> new2 = new ArrayList<>();
-        new2.add(-5.0);
-        new2.add(-2.4);
-        new2.add(7.0);
-        new2.add(4.3);
-        new2.add(-12.0);
-        System.out.println(filter(new2));
+        ArrayList<Object> even = new ArrayList<>();
+        even.add(5);
+        even.add(6);
+        even.add(7);
+        even.add(4);
+        even.add(12);
+        System.out.println(filter(even));
+
+        ArrayList<Object> positive = new ArrayList<>();
+        positive.add(-5.0);
+        positive.add(-2.4);
+        positive.add(7.0);
+        positive.add(4.3);
+        positive.add(-12.0);
+        System.out.println(filter(positive));
+
+        ArrayList<Object> stringA = new ArrayList<>();
+        stringA.add("Adidas");
+        stringA.add("Ali");
+        stringA.add("dgddfgdfg");
+        stringA.add("sfsdfsdf");
+        System.out.println(filter(stringA));
 
     }
 
     public static List<Object> filter(ArrayList<Object> forFilter) {
         List newList = new ArrayList<>();
+
+
 
         for (Object filter : forFilter
         ) { if (filter instanceof Integer) {
@@ -62,6 +72,13 @@ public class Main {
                 if (isPositive.IsGood(filter)) {
                     newList.add(filter);
                 }
+            }
+            if (filter instanceof String) {
+                BeginsWithA withA = new BeginsWithA();
+                if (withA.IsGood(filter)) {
+                    newList.add(filter);
+                }
+
             }
 
 
