@@ -1,4 +1,4 @@
-public class NewClass {
+public class NewClass extends ForClass {
     private String name;
     private Integer age;
     private double avrMark;
