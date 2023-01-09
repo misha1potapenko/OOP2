@@ -11,7 +11,7 @@ public abstract class ForClass {
 
     @Override
     public String toString() {
-        return "ForClass{" +
+        return "{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", avrMark=" + avrMark +
