@@ -36,6 +36,8 @@ public class Main {
         list.add(pass);
         list.add(pass2);
 
+        System.out.println(list);
+
 
 
     }

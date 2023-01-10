@@ -8,4 +8,13 @@ public  class ForObject <E> {
         this.name = name;
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "ForObject{" +
+                "passvord=" + passvord +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
