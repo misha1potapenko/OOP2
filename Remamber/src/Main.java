@@ -28,6 +28,10 @@ public class Main {
 
         }
 
+
+        ForObject<Integer> pass = new ForObject<>(123, "Nina", 12);
+        ForObject<String> pass2 = new ForObject<>("123", "Nina", 12);
+
     }
 
 }
