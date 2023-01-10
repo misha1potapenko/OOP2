@@ -13,6 +13,15 @@ public class Main {
 
 
         System.out.println(newClass);
+
+
+        List<NewClass5> newClass5 = new ArrayList<>(5);
+        newClass5.add(new NewClass5("Zoja",15, 5.0));
+        newClass5.add(new NewClass5("Zoja",15, 5.0));
+        newClass5.add(new NewClass5("Zoja",15, 5.0));
+        newClass5.add(new NewClass5("Zoja",15, 5.0));
+        newClass5.add(new NewClass5("Zoja",15, 5.0));
+
     }
 
 }
