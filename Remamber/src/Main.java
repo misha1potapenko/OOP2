@@ -16,11 +16,17 @@ public class Main {
 
 
         List<NewClass5> newClass5 = new ArrayList<>(5);
-        newClass5.add(new NewClass5("Zoja",15, 5.0));
-        newClass5.add(new NewClass5("Zoja",15, 5.0));
-        newClass5.add(new NewClass5("Zoja",15, 5.0));
-        newClass5.add(new NewClass5("Zoja",15, 5.0));
-        newClass5.add(new NewClass5("Zoja",15, 5.0));
+        newClass5.add(new NewClass5("Zoja",15, 4.2));
+        newClass5.add(new NewClass5("Zula",15, 4.9));
+        newClass5.add(new NewClass5("Ramil",15, 4.0));
+        newClass5.add(new NewClass5("Kola",15, 4.7));
+        newClass5.add(new NewClass5("Misha",15, 5.0));
+
+        for (NewClass5 element: newClass5
+             ) {
+            System.out.println(element);
+
+        }
 
     }
 

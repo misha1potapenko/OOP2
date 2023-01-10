@@ -4,8 +4,5 @@ public class NewClass5 extends ForClass{
         super(name, age, avrMark);
     }
 
-    @Override
-    public String toString() {
-        return "NewClass5{}";
-    }
+
 }
