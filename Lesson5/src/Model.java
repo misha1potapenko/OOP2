@@ -1,4 +1,4 @@
-package Ex001Calc;
+
 
 public interface Model {
     int result();
