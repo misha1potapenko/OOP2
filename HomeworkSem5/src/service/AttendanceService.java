@@ -1,4 +1,4 @@
-package Data;
+package service;
 
 public class AttendanceService {
 }
