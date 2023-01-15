@@ -18,9 +18,9 @@ public class StudentsGroup {
                 "students=" + students +
                 '}';
     }
-    public List<Student> NewGroup(Student student){
+    public List<Student> NewGroup(){
         List<Student> newGroup1 = new ArrayList<>();
-        newGroup1.add(new Student(1,"Petrov Ivan"));
+        newGroup1.add(new Student(1,"Petrov Ivan",));
         newGroup1.add(new Student(2,"Voronova Inna"));
         newGroup1.add(new Student(3,"Kuznecova Marina"));
         return newGroup1;
