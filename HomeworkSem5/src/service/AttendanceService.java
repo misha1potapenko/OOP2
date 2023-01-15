@@ -1,16 +1,25 @@
 package service;
 
-import Data.AttendanseJournal;
+
 import Data.Student;
+import Data.StudentsGroup;
+
+import java.util.List;
+
 
 public class AttendanceService {
+    private int attendance;
 
-    private Student student;
+    StudentsGroup forNewGroup = new StudentsGroup();
 
-    private AttendanseJournal date;
+    public int getAttendance(List<Student> group){
 
-    public AttendanceService(Student student, AttendanseJournal date) {
-        this.student = student;
-        this.date = date;
+        for (Student each: forNewGroup.NewGroup()
+             ) {
+            System.out.println(each);
+        }
+
+        return attendance;
     }
+
 }

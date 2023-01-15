@@ -12,5 +12,14 @@ public class AttendanseJournal {
     public AttendanseJournal(LocalDate date, boolean attendanceStudent) {
         this.date = date;
         this.attendanceStudent = attendanceStudent;
+
+    }
+
+    @Override
+    public String toString() {
+        return "AttendanseJournal{" +
+                "date=" + date +
+                ", attendanceStudent=" + attendanceStudent +
+                '}';
     }
 }

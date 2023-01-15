@@ -11,11 +11,20 @@
 
 
 
+import Data.StudentsGroup;
+import service.AttendanceService;
+import service.AttendanceView;
+
 
 public class Main {
     public static void main(String[] args) {
 
+        AttendanceView showGroup = new AttendanceView();
+        showGroup.getGroup();
 
-        System.out.println("Hello world!");
+        StudentsGroup group = new StudentsGroup();
+
+        AttendanceService newGroup = new AttendanceService();
+        newGroup.getAttendance(group.NewGroup());
     }
 }

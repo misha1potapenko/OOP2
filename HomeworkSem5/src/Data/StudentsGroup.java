@@ -9,16 +9,8 @@ public class StudentsGroup {
     private List<Student> students = new ArrayList<>();
 
 
-    public StudentsGroup(List<Student> students) {
-        this.students = students;
-    }
 
-    @Override
-    public String toString() {
-        return "StudentsGroup{" +
-                "students=" + students +
-                '}';
-    }
+
     public List<Student> NewGroup(){
         List<Student> newGroup1 = new ArrayList<>();
         List<AttendanseJournal> forPetrov = new ArrayList<>();
@@ -41,4 +33,10 @@ public class StudentsGroup {
         return newGroup1;
     }
 
+    @Override
+    public String toString() {
+        return "StudentsGroup{" +
+                "students=" + students +
+                '}';
+    }
 }
