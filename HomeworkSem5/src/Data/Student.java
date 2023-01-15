@@ -1,7 +1,5 @@
 package Data;
 
-import service.AttendanseJournal;
-
 import java.util.ArrayList;
 import java.util.List;
 

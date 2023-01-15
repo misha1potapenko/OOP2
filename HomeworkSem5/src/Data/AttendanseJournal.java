@@ -1,4 +1,4 @@
-package service;
+package Data;
 
 import Data.Student;
 

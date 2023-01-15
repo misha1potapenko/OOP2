@@ -1,8 +1,7 @@
 package service;
 
+import Data.AttendanseJournal;
 import Data.Student;
-
-import java.time.LocalDate;
 
 public class AttendanceService {
 
