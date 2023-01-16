@@ -14,6 +14,15 @@ public class Student {
         this.name = name;
         this.attendanse = attendanse;
     }
+    public float forAttendance(){
+        for (AttendanseJournal each: attendanse
+             ) {
+            System.out.println(each);
+        }
+
+        return 0;
+
+    }
     public List<AttendanseJournal> getAll(){
         List<AttendanseJournal> copy = new ArrayList<>();
         for (AttendanseJournal student: attendanse

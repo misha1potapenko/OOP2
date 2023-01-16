@@ -24,5 +24,8 @@ public class Main {
 
         AttendanceService newGroup = new AttendanceService();
         newGroup.getAttendance(group.NewGroup());
+
+
+
     }
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FilterForObject/FilterForObject.iml" filepath="$PROJECT_DIR$/FilterForObject/FilterForObject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HomeworkIterator/HomeworkIterator.iml" filepath="$PROJECT_DIR$/HomeworkIterator/HomeworkIterator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HomeworkSem5/HomeworkSem5.iml" filepath="$PROJECT_DIR$/HomeworkSem5/HomeworkSem5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Iterator/Iterator.iml" filepath="$PROJECT_DIR$/Iterator/Iterator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson5/Lesson5.iml" filepath="$PROJECT_DIR$/Lesson5/Lesson5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP2.iml" filepath="$PROJECT_DIR$/OOP2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Remamber/Remamber.iml" filepath="$PROJECT_DIR$/Remamber/Remamber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sem5/Sem5.iml" filepath="$PROJECT_DIR$/Sem5/Sem5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sem6/Sem6.iml" filepath="$PROJECT_DIR$/Sem6/Sem6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SeminarCriateFileXmlJson/SeminarCriateFileXmlJson.iml" filepath="$PROJECT_DIR$/SeminarCriateFileXmlJson/SeminarCriateFileXmlJson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestHomeworkSem5/TestHomeworkSem5.iml" filepath="$PROJECT_DIR$/TestHomeworkSem5/TestHomeworkSem5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sem5/date/date.iml" filepath="$PROJECT_DIR$/Sem5/date/date.iml" />
+    </modules>
+  </component>
+</project>
