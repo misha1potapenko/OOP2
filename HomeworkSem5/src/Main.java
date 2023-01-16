@@ -19,8 +19,6 @@ import service.AttendanceView;
 public class Main {
     public static void main(String[] args) {
 
-        AttendanceView showGroup = new AttendanceView();
-        showGroup.getGroup();
 
         StudentsGroup group = new StudentsGroup();
 
