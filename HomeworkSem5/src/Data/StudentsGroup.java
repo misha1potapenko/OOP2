@@ -19,6 +19,7 @@ public class StudentsGroup {
         forPetrov.add(new AttendanseJournal(LocalDate.of(2020,1,14), false));
         newGroup1.add(new Student(1,"Petrov Ivan", forPetrov));
 
+
         List<AttendanseJournal> forVoronova = new ArrayList<>();
         forVoronova.add(new AttendanseJournal(LocalDate.of(2020,1,12), false));
         forVoronova.add(new AttendanseJournal(LocalDate.of(2020,1,13), false));
