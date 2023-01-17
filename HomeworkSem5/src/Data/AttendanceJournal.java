@@ -1,18 +1,20 @@
 package Data;
 
-import Data.Student;
-
 import java.time.LocalDate;
 
-public class AttendanseJournal {
+public class AttendanceJournal {
     private LocalDate date;
     private boolean attendanceStudent;
 
 
-    public AttendanseJournal(LocalDate date, boolean attendanceStudent) {
+    public AttendanceJournal(LocalDate date, boolean attendanceStudent) {
         this.date = date;
         this.attendanceStudent = attendanceStudent;
 
+    }
+
+    public boolean isAttendanceStudent() {
+        return attendanceStudent;
     }
 
     @Override

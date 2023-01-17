@@ -4,14 +4,14 @@ import java.time.LocalDate;
 
 public class Attendance {
     private LocalDate date;
-    private boolean attandance;
+    private boolean attendance;
 
     public Attendance(LocalDate date, boolean attandance) {
         this.date = date;
-        this.attandance = attandance;
+        this.attendance = attandance;
     }
 
-    public boolean isAttandance() {
-        return attandance;
+    public boolean isAttendance() {
+        return attendance;
     }
 }

@@ -7,25 +7,32 @@ public class Student {
     private int id;
     private String name;
 
-    private List<AttendanseJournal> attendanse = new ArrayList<>();
+    private List<AttendanceJournal> attendance = new ArrayList<>();
 
-    public Student(int id, String name, List<AttendanseJournal> attendanse) {
+    public Student(int id, String name, List<AttendanceJournal> attendance) {
         this.id = id;
         this.name = name;
-        this.attendanse = attendanse;
+        this.attendance = attendance;
     }
-    public float forAttendance(){
-        for (AttendanseJournal each: attendanse
-             ) {
-            System.out.println(each);
+    public float attendancePercent(){
+        float percent = 0;
+        float count = 0;
+        float allDay = 0;
+        for (AttendanceJournal each: attendance
+        ) { allDay ++;
+            if (each.isAttendanceStudent()) count ++;
+
         }
-
-        return 0;
-
+        percent = count/allDay * 100;
+        return percent;
     }
-    public List<AttendanseJournal> getAll(){
-        List<AttendanseJournal> copy = new ArrayList<>();
-        for (AttendanseJournal student: attendanse
+
+
+
+
+    public List<AttendanceJournal> getAll(){
+        List<AttendanceJournal> copy = new ArrayList<>();
+        for (AttendanceJournal student: attendance
         ) {
             copy.add(student);
         }
@@ -37,6 +44,6 @@ public class Student {
         return "\n Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", attendanse=" + attendanse;
+                ", attendanse=" + attendance;
     }
 }

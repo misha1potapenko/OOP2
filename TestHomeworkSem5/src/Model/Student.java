@@ -15,17 +15,17 @@ public class Student {
         this.attendances = attendances;
     }
 
-    public float attendancePersent(){
-        float persent = 0;
+    public float attendancePercent(){
+        float percent = 0;
         float count = 0;
         float allDay = 0;
         for (Attendance each: attendances
              ) { allDay ++;
-            if (each.isAttandance() == true) count ++;
+            if (each.isAttendance()) count ++;
 
         }
-        persent = count/allDay * 100;
-        return persent;
+        percent = count/allDay * 100;
+        return percent;
     }
 
     @Override

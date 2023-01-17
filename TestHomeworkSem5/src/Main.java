@@ -12,7 +12,7 @@ public class Main {
         forFirst.add(new Attendance(LocalDate.of(2020,11,23), false));
         forFirst.add(new Attendance(LocalDate.of(2020,10,23), true));
         Student first = new Student(1,"Popov Ilja", forFirst);
-        System.out.println(first.attendancePersent());
+        System.out.println(first.attendancePercent());
 
         System.out.println("Hello world!");
     }
