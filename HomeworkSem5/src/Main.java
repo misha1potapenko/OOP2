@@ -14,16 +14,21 @@
 import Data.StudentsGroup;
 import service.AttendanceService;
 import service.AttendanceView;
+import service.Controller;
 
 
 public class Main {
     public static void main(String[] args) {
 
 
-        StudentsGroup group = new StudentsGroup();
 
-        AttendanceService newGroup = new AttendanceService();
-        newGroup.getAttendance(group.NewGroup());
+
+//        AttendanceView show = new AttendanceView();
+//        show.showGroup();
+//        show.showAttendance();
+
+        Controller cont = new Controller();
+        cont.showMe();
 
 
 

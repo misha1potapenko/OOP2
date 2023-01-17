@@ -4,22 +4,22 @@ package service;
 import Data.Student;
 import Data.StudentsGroup;
 
-import java.util.List;
-
 
 public class AttendanceService {
     private int attendance;
+    private StudentsGroup group = new StudentsGroup();
 
-    StudentsGroup forNewGroup = new StudentsGroup();
 
-    public int getAttendance(List<Student> group){
 
-        for (Student each: forNewGroup.NewGroup()
+
+    public void showAllAttendance(){
+        StudentsGroup group1 = new StudentsGroup();
+        for (Student student:group1.NewGroup()
              ) {
-            System.out.println(each);
+            System.out.printf(student.getName() + " = " + student.attendancePercent() + '\n');
+
         }
 
-        return attendance;
+        }
     }
 
-}

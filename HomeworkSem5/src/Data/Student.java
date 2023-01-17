@@ -9,6 +9,10 @@ public class Student {
 
     private List<AttendanceJournal> attendance = new ArrayList<>();
 
+    public String getName() {
+        return name;
+    }
+
     public Student(int id, String name, List<AttendanceJournal> attendance) {
         this.id = id;
         this.name = name;
