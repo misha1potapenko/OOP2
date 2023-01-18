@@ -26,7 +26,8 @@ public class Controller {
 
             }
             else if ( i == 3) {
-
+                AttendanceView show = new AttendanceView();
+                show.sortGroup25();
             }
             else if ( i == 5) {
                 System.out.println("Вы вышли из программы");

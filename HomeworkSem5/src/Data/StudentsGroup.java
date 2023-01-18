@@ -47,11 +47,14 @@ public class StudentsGroup {
         return group;
     }
     public List<Student> sortGroup25(List<Student> group) {
-        List<String> group25 = new ArrayList<>();
+        List<Student> group25 = new ArrayList<>();
         for (int i = 0; i < group.size(); i++) {
-            if (group)
 
-        }
+            if (group.get(i).attendancePercent() < 25.0) {
+                group25.add(group.get(i));
+
+            }
+        }return group25;
     }
 
     @Override

@@ -16,5 +16,10 @@ public class AttendanceView {
         AttendanceService attendanceService = new AttendanceService();
         attendanceService.sortGroup();
     }
+    public void sortGroup25(){
+        StudentsGroup group = new StudentsGroup();
+        System.out.println(group.sortGroup25(group.NewGroup()));
+
+    }
 
 }
