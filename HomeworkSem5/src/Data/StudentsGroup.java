@@ -31,6 +31,13 @@ public class StudentsGroup {
         forKuznecova.add(new AttendanceJournal(LocalDate.of(2020,1,13), true));
         forKuznecova.add(new AttendanceJournal(LocalDate.of(2020,1,14), true));
         newGroup1.add(new Student(3,"Kuznecova Marina", forKuznecova));
+
+
+        List<AttendanceJournal> forPopova = new ArrayList<>();
+        forPopova.add(new AttendanceJournal(LocalDate.of(2020,1,12), false));
+        forPopova.add(new AttendanceJournal(LocalDate.of(2020,1,13), false));
+        forPopova.add(new AttendanceJournal(LocalDate.of(2020,1,14), true));
+        newGroup1.add(new Student(4,"Popova Marina", forPopova));
         return newGroup1;
     }
     public List<Student> sortGroup(List<Student> group){
