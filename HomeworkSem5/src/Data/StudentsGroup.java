@@ -44,7 +44,7 @@ public class StudentsGroup {
 
         for (int i = 0; i < group.size(); i++) {
             for (int j = 0; j < group.size()-1; j++) {
-                if (group.get(j).attendancePercent() > group.get(j+1).attendancePercent() ){
+                if (group.get(j).attendancePercent() < group.get(j+1).attendancePercent() ){
                     Student temp = group.get(j);
                     group.set(j,group.get(j+1));
                     group.set(j+1, temp);
