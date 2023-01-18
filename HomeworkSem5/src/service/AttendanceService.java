@@ -19,7 +19,12 @@ public class AttendanceService {
             System.out.printf(student.getName() + " = " + student.attendancePercent() + '\n');
 
         }
-        group1.NewGroup()
+
+
+        }
+        public void sortGroup(){
+        StudentsGroup group1 = new StudentsGroup();
+            System.out.println(group1.sortGroup(group1.NewGroup()));
 
         }
     }

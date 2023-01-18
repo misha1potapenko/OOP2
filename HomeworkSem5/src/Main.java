@@ -23,9 +23,7 @@ public class Main {
 
 
 
-//        AttendanceView show = new AttendanceView();
-//        show.showGroup();
-//        show.showAttendance();
+
 
         Controller cont = new Controller();
         cont.showMe();

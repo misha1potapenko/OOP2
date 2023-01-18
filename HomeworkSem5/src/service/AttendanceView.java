@@ -12,5 +12,9 @@ public class AttendanceView {
         AttendanceService attendanceService = new AttendanceService();
         attendanceService.showAllAttendance();
     }
+    public void sortGroup(){
+        AttendanceService attendanceService = new AttendanceService();
+        attendanceService.sortGroup();
+    }
 
 }

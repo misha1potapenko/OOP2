@@ -11,6 +11,8 @@ public class Controller {
             System.out.println("Выберите действие");
             System.out.println("1 - показать студентов и посещаемость");
             System.out.println("2 - отсортировать посещаемость");
+            System.out.println("3 - показать студентов с посещаемостью ниже 25%");
+            System.out.println("5 - выход из программы");
             Scanner scan = new Scanner(System.in);
             int i = scan.nextInt();
             if (i == 1){
@@ -19,6 +21,8 @@ public class Controller {
                 show.showAttendance();
 
             } else if ( i == 2) {
+                AttendanceView show = new AttendanceView();
+                show.sortGroup();
 
             }
             else if ( i == 3) {
