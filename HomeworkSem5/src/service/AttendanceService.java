@@ -19,6 +19,7 @@ public class AttendanceService {
             System.out.printf(student.getName() + " = " + student.attendancePercent() + '\n');
 
         }
+        group1.NewGroup()
 
         }
     }
