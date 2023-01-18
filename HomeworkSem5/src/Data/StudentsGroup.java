@@ -46,8 +46,13 @@ public class StudentsGroup {
         }
         return group;
     }
+    public List<Student> sortGroup25(List<Student> group) {
+        List<String> group25 = new ArrayList<>();
+        for (int i = 0; i < group.size(); i++) {
+            if (group)
 
-
+        }
+    }
 
     @Override
     public String toString() {
