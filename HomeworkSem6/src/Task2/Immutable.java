@@ -1,6 +1,6 @@
 package Task2;
 
-public class Immutable extends Collection {
+public class Immutable<T> extends Collection {
     @Override
     public int getSize() {
         return 0;
