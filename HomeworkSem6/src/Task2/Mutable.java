@@ -20,7 +20,10 @@ public class Mutable<T> extends Collection {
     public void set(int i, T newValue) {
 
     }
-    public void add( T newValue) {
+    public void add(T newValue) {
+
+    }
+    public void remuve(T newValue) {
 
     }
 }
