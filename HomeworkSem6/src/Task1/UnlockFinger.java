@@ -1,6 +1,6 @@
 package Task1;
 
-public class UnlockerFace implements Unlocker {
+public class UnlockFinger implements Unlocker{
     @Override
     public boolean unlock() {
         return false;
