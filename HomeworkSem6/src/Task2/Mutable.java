@@ -14,16 +14,13 @@ public class Mutable<T> extends Collection {
         return 0;
     }
 
-    //        • set (int i, T newValue)
-//        • add (T newValue)
-//        • remove (T value)
     public void set(int i, T newValue) {
 
     }
     public void add(T newValue) {
 
     }
-    public void remuve(T newValue) {
+    public void remove(T newValue) {
 
     }
 }
