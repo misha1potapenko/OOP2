@@ -5,6 +5,6 @@ public class Main {
         Telephone telephone = new Telephone();
         telephone.turnOn();
         telephone.turnOff();
-        System.out.println("Hello world!");
+
     }
 }
