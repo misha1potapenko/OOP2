@@ -9,4 +9,11 @@ public class LegalEntity extends Counterparty{
         super(name, telephone, address, emailAddress, addressVK, addressTelegram);
         this.site = site;
     }
+
+    @Override
+    public String toString() {
+        return "LegalEntity{" +
+                "site='" + site + '\'' +
+                '}';
+    }
 }
