@@ -10,10 +10,11 @@ public class LegalEntity extends Counterparty{
         this.site = site;
     }
 
+
     @Override
     public String toString() {
         return "LegalEntity{" +
                 "site='" + site + '\'' +
-                '}';
+                "} " + super.toString();
     }
 }

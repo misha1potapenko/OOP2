@@ -17,4 +17,16 @@ public abstract class Counterparty {
         this.addressVK = addressVK;
         this.addressTelegram = addressTelegram;
     }
+
+    @Override
+    public String toString() {
+        return "Counterparty{" +
+                "name='" + name + '\'' +
+                ", telephone=" + telephone +
+                ", address='" + address + '\'' +
+                ", emailAddress='" + emailAddress + '\'' +
+                ", addressVK='" + addressVK + '\'' +
+                ", addressTelegram='" + addressTelegram + '\'' +
+                '}';
+    }
 }

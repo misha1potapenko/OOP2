@@ -7,6 +7,6 @@ public class PhysicalPerson extends Counterparty{
 
     @Override
     public String toString() {
-        return "PhysicalPerson{}";
+        return "PhysicalPerson{} " + super.toString();
     }
 }
