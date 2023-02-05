@@ -8,7 +8,8 @@ public abstract class Counterparty {
     private String addressVK;
     private String addressTelegram;
 
-    public Counterparty(String name, List<Integer> telephone, String address, String emailAddress, String addressVK, String addressTelegram) {
+    public Counterparty(String name, List<Integer> telephone, String address, String emailAddress,
+                        String addressVK, String addressTelegram) {
         this.name = name;
         this.telephone = telephone;
         this.address = address;
