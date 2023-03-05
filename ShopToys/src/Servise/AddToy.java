@@ -3,7 +3,8 @@ package Servise;
 import Date.Toy;
 
 
-
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -15,34 +16,45 @@ public class AddToy {
 
 
     public List<Toy> addToy()  {
-        System.out.println("Введите количество игрушек котрые будут в игре ");
+        System.out.println("Сколько игрушек хотите добавить: ");
         Scanner counter = new Scanner(System.in);
         int count = counter.nextInt();
         int forCount = 0;
         while (forCount < count) {
-            Scanner in = new Scanner(System.in);
-            System.out.println("Введите id ");
-            int id = in.nextInt();
+            try(FileWriter writer = new FileWriter("Toys.txt", true)) {
+                Scanner in = new Scanner(System.in);
+                System.out.println("Введите id ");
+                int id = in.nextInt();
+                writer.write(id + ";");
 
-            Scanner in1 = new Scanner(System.in);
-            System.out.println("Введите name ");
-            String name = in1.nextLine();
+                Scanner in1 = new Scanner(System.in);
+                System.out.println("Введите name ");
+                String name = in1.nextLine();
+                writer.write(name + ";");
 
-            Scanner in2 = new Scanner(System.in);
-            System.out.println("Введите количество ");
-            int amout = in2.nextInt();
+                Scanner in2 = new Scanner(System.in);
+                System.out.println("Введите количество ");
+                int amount = in2.nextInt();
+                writer.write(amount + ";");
 
-            Scanner in3 = new Scanner(System.in);
-            System.out.println("Введите частоту выпадания ");
-            int frequency = in3.nextInt();
+                Scanner in3 = new Scanner(System.in);
+                System.out.println("Введите частоту выпадания ");
+                int frequency = in3.nextInt();
+                writer.write(frequency + ";");
 
-            Toy nextToy = new Toy(id, name, amout, frequency);
-            toys.add(nextToy);
-            forCount += 1;
+                Toy nextToy = new Toy(id, name, amount, frequency);
+                toys.add(nextToy);
+                writer.write("\n");
+                forCount += 1;
+            }
+            catch (IOException ex) {
 
+                    System.out.println(ex.getMessage());
+                }
         }
-        System.out.println("Наши игрушки:" + toys);
+        System.out.println("Добавленные игрушки:" + toys);
         return toys;
 
     }
+
 }
