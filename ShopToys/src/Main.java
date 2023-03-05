@@ -1,5 +1,9 @@
+import Servise.AddToy;
+
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public static void main(String[] args) throws Exception {
+        AddToy add = new AddToy();
+        add.addToy();
+
     }
 }
